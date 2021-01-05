@@ -1,7 +1,7 @@
 /*
  * @Date: 2021-01-04 17:34:18
  * @LastEditors: 郝怿
- * @LastEditTime: 2021-01-05 15:58:42
+ * @LastEditTime: 2021-01-05 17:40:27
  * @FilePath: /markdown_view/example/lib/main.dart
  */
 import 'package:flutter/material.dart';
@@ -36,11 +36,18 @@ class _HomePageState extends State<HomePage> {
     return Material(
       child: Scaffold(
         body: MarkdownView(
-          markdownSource: markdownSource,
+          markdownSource: temp2,
         ),
       ),
     );
   }
+
+  String temp2 = r"""
+	hello
+	
+	
+	hello	
+  """;
 
   String markdownSource = r"""
   # 欢迎使用 Cmd Markdown 编辑阅读器
